@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<!-- sqlSessionFactory -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		
+		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+		<!-- 配置mapper.xml映射的路径 , 可以使用 通配符代码多个文件 -->
+		<property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"></property>
+		<!-- typeAliasesPackage 配置类型别名扫描包 ,使用逗号配置多个扫描包-->
+		<property name="typeAliasesPackage" value="com.bizideal.wechat.entity"></property>
+	</bean>
+	
+	
+	
+	
+	<!-- 接口扫描 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 如果配置多个mapper路径可以使用逗号进行分割 -->
+		<property name="basePackage" value="com.bizideal.wechat.mapper" />
+	</bean>
+</beans>

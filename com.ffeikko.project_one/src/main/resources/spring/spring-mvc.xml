@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+    <!-- 注解驱动 -->
+    <mvc:annotation-driven/>
+    <!-- 包扫描 -->
+    <context:component-scan base-package="com.bizideal.wechat.controller"/>
+    <!-- 处理静态资源 -->
+    <!--<mvc:default-servlet-handler/>-->
+    <!--springMvc自己处理静态资源 -->
+    <!--这个地方必须要有路径 -->
+    <!--mapping：映射-->
+    <!--location：本地资源路径，注意必须是webapp根目录下的路径。-->
+    <!--两个*，它表示映射resources/下所有的URL，包括子路径（即接多个/）-->
+    <!--<mvc:resources location="/images/" mapping="/images/*" cache-period="360000"/>-->
+
+
+    <!-- 启用AspectJ对Annotation(注解)的支持 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+
+
+    <!-- use spring4-thymeleaf3.0.2 START -->
+    <bean id="viewResolverThymeleaf" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine"/>
+        <property name="characterEncoding" value="utf-8"/>
+        <property name="order" value="0"/>
+    </bean>
+
+    <bean id="templateResolver"
+          class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="/page/"/>
+        <property name="suffix" value=".html"/>
+        <!-- HTML is the default value, added here for the sake of clarity. -->
+        <property name="templateMode" value="HTML5"/>
+        <!-- Template cache is true by default. Set to false if you want -->
+        <!-- templates -->
+        <!-- to be automatically updated when modified. -->
+        <property name="cacheable" value="false"/>
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
+
+    <!-- SpringTemplateEngine automatically applies SpringStandardDialect and -->
+    <!-- enables Spring's own MessageSource message resolution mechanisms. -->
+    <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver"/>
+        <!-- Enabling the SpringEL compiler with Spring 4.2.4 or newer can speed
+            up -->
+        <!-- execution in most scenarios, but might be incompatible with specific -->
+        <!-- cases when expressions in one template are reused across different
+            data -->
+        <!-- ypes, so this flag is "false" by default for safer backwards -->
+        <!-- compatibility. -->
+        <property name="enableSpringELCompiler" value="true"/>
+    </bean>
+    <!-- use spring4-thymeleaf3.0.2 END -->
+
+
+    <!--配置SpringMvc拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.bizideal.wechat.interceptors.LoginInterptors"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <!-- exclude这个标签4.0出来的-->
+            <mvc:exclude-mapping path="/"></mvc:exclude-mapping>
+            <bean class="com.bizideal.wechat.interceptors.PermissionInterptors"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>
