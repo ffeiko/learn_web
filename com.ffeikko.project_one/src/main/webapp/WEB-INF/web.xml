@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	id="WebApp_ID" version="3.0">
+		 xmlns="http://java.sun.com/xml/ns/javaee"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+		 id="WebApp_ID" version="3.0">
 	<display-name>StartyWechat</display-name>
-	
+
 	<!-- 配置spring启动的监听器 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -13,8 +13,8 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	
-	
+
+
 	<!-- post乱码过虑器start -->
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
@@ -34,7 +34,7 @@
 	</filter-mapping>
 	<!-- post乱码过虑器end -->
 
-	
+
 
 	<!-- 配置springMVC -->
 	<servlet>
@@ -43,7 +43,7 @@
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>classpath:spring/spring-mvc.xml</param-value>
-								  
+
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
