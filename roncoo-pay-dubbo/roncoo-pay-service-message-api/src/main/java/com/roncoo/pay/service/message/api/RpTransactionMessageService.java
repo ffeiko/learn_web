@@ -17,7 +17,7 @@ import com.roncoo.pay.service.message.exceptions.MessageBizException;
 
 /**
  * <b>功能说明: </b>
- * @author Peter <a href="http://www.roncoo.com">龙果学院(www.roncoo.com)</a>
+ * @author Peter <a href="http://www.roncoo.com">龙果学院(www.roncoo.com)
  */
 public interface RpTransactionMessageService {
 
