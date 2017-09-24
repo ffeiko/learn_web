@@ -71,7 +71,9 @@
           <element id="archive" name="roncoo-pay-service-account-api-0.1-SNAPSHOT.jar">
             <element id="module-output" name="roncoo-pay-service-account-api" />
           </element>
-          <element id="library" level="project" name="Maven: org.mengyun:tcc-transaction-api:1.1.5" />
+          <element id="archive" name="tcc-transaction-api-1.1.5.jar">
+            <element id="module-output" name="tcc-transaction-api" />
+          </element>
           <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
           <element id="archive" name="roncoo-pay-service-user-api-0.1-SNAPSHOT.jar">

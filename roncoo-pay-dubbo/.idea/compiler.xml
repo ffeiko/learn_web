@@ -29,6 +29,18 @@
         <module name="roncoo-pay-web-gateway" />
         <module name="roncoo-pay-web-message" />
         <module name="roncoo-pay-web-sample-shop" />
+        <module name="tcc-transaction-api" />
+        <module name="tcc-transaction-core" />
+        <module name="tcc-transaction-dubbo-capital" />
+        <module name="tcc-transaction-dubbo-capital-api" />
+        <module name="tcc-transaction-dubbo-order" />
+        <module name="tcc-transaction-dubbo-order-api" />
+        <module name="tcc-transaction-dubbo-redpacket" />
+        <module name="tcc-transaction-dubbo-redpacket-api" />
+        <module name="tcc-transaction-dubbo-web-trade" />
+        <module name="tcc-transaction-server" />
+        <module name="tcc-transaction-spring" />
+        <module name="tcc-transaction-unit-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -57,6 +69,20 @@
       <module name="roncoo-pay-web-gateway" target="1.7" />
       <module name="roncoo-pay-web-message" target="1.7" />
       <module name="roncoo-pay-web-sample-shop" target="1.7" />
+      <module name="tcc-transaction" target="1.5" />
+      <module name="tcc-transaction-api" target="1.7" />
+      <module name="tcc-transaction-core" target="1.7" />
+      <module name="tcc-transaction-dubbo-capital" target="1.7" />
+      <module name="tcc-transaction-dubbo-capital-api" target="1.7" />
+      <module name="tcc-transaction-dubbo-order" target="1.7" />
+      <module name="tcc-transaction-dubbo-order-api" target="1.7" />
+      <module name="tcc-transaction-dubbo-redpacket" target="1.7" />
+      <module name="tcc-transaction-dubbo-redpacket-api" target="1.7" />
+      <module name="tcc-transaction-dubbo-web-trade" target="1.7" />
+      <module name="tcc-transaction-parent" target="1.7" />
+      <module name="tcc-transaction-server" target="1.7" />
+      <module name="tcc-transaction-spring" target="1.7" />
+      <module name="tcc-transaction-unit-test" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

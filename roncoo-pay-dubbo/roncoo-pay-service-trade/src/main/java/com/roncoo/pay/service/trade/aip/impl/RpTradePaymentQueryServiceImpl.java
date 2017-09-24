@@ -44,6 +44,7 @@ import com.roncoo.pay.service.user.exceptions.UserBizException;
  */
 
 @Service("rpTradePaymentQueryService")
+@SuppressWarnings("all")
 public class RpTradePaymentQueryServiceImpl implements RpTradePaymentQueryService {
 	@Autowired
 	private RpTradePaymentRecordDao rpTradePaymentRecordDao;

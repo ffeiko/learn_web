@@ -23,7 +23,7 @@ import java.security.cert.X509Certificate;
 import java.util.*;
 import java.util.Map.Entry;
 
-
+@SuppressWarnings("all")
 public class SimpleHttpUtils {
 //	private static final Logger logger = Logger.getLogger(SimpleHttpUtils.class);
 

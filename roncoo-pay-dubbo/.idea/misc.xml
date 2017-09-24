@@ -5,11 +5,15 @@
     <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-gateway" />
     <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-message" />
     <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-sample-shop" />
+    <file type="web" url="file://$PROJECT_DIR$/../tcc-transaction-v1.1.5/tcc-transaction-dubbo-web-trade" />
+    <file type="web" url="file://$PROJECT_DIR$/../tcc-transaction-v1.1.5/tcc-transaction-server" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../tcc-transaction-v1.1.5/pom.xml" />
+        <option value="$PROJECT_DIR$/../tcc-transaction-v1.1.5/tcc-transaction-unit-test/pom.xml" />
       </list>
     </option>
   </component>
