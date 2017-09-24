@@ -19,6 +19,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @创建时间: 2016-06-22,下午9:47:55 .
  * @版本: 1.0 .
  */
+@SuppressWarnings("ALL")
 public class DubboProvider {
 	private static final Log log = LogFactory.getLog(DubboProvider.class);
 	
