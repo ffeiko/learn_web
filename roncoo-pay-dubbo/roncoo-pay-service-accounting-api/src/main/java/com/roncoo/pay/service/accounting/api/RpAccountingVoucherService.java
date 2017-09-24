@@ -63,7 +63,8 @@ public interface RpAccountingVoucherService {
 	/***
 	 * 根据条件查询分录请求表数据
 	 * 
-	 * @param searchMap
+	 * @param pageParam
+	 * @param paramMap
 	 * @return
 	 */
 	public PageBean listPage(PageParam pageParam, Map<String, Object> paramMap) throws AccountingBizException;
@@ -87,7 +88,7 @@ public interface RpAccountingVoucherService {
 	/**
 	 * 修改分录请求
 	 * 
-	 * @param param
+	 * @param entity
 	 */
 	public void updateAccountingVoucher(RpAccountingVoucher entity) throws AccountingBizException;
 

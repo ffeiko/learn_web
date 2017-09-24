@@ -39,6 +39,7 @@ import com.roncoo.pay.service.message.enums.MessageStatusEnum;
  * @author：shenjialong
  */
 @Component("messageScheduled")
+@SuppressWarnings("all")
 public class MessageScheduledImpl implements MessageScheduled {
 	
 	private static final Log log = LogFactory.getLog(MessageScheduledImpl.class);
