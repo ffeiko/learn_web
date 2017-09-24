@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaa6caf6-0130-49ae-b5ac-14d2eb3635ad" name="Default" comment="" />
+    <list default="true" id="eaa6caf6-0130-49ae-b5ac-14d2eb3635ad" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/roncoo-pay/target/" />
     <ignored path="$PROJECT_DIR$/roncoo-pay-service-account-api/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,8 +123,8 @@
       <file leaf-file-name="RpTransactionMessageService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/roncoo-pay-service-message-api/src/main/java/com/roncoo/pay/service/message/api/RpTransactionMessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="0">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -276,51 +278,6 @@
               <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="roncoo-pay-service-message-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="roncoo-pay-service-message-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="roncoo-pay-service-message-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="roncoo-pay-service-message-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="roncoo-pay-service-message-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roncoo-pay-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roncoo-pay-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="roncoo-pay-service-message-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -447,7 +404,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506218365035</updated>
-      <workItem from="1506218369176" duration="8380000" />
+      <workItem from="1506218369176" duration="9040000" />
     </task>
     <task id="LOCAL-00001" summary="idea 初次提交">
       <created>1506224844466</created>
@@ -488,10 +445,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8380000" />
+    <option name="totallyTimeSpent" value="9040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.808752" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -504,7 +462,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28290468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28290468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54294974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -905,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/roncoo-pay-service-message-api/src/main/java/com/roncoo/pay/service/message/api/RpTransactionMessageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
