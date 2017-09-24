@@ -22,6 +22,7 @@ import com.roncoo.pay.app.queue.utils.SpringContextUtil;
  * @版本: V1.0
  *
  */
+@SuppressWarnings("all")
 public class App { 
 
 	private static final Log LOG = LogFactory.getLog(App.class);
